@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+<form id="imgForm">
+  <input type="text" id="imgUrl" placeholder="Image URL">
+  <input type="text" id="imgTitle" placeholder="Title">
+
+  <select id="imgCategory">
+    <option value="">Select Category</option>
+    <option value="Nature">Nature</option>
+    <option value="Animals">Animals</option>
+    <option value="Tech">Tech</option>
+  </select>
+
+  <button type="submit">Add Image</button>
+</form>
+
+<div class="filters">
+  <button onclick="filterImages('All')">All</button>
+  <button onclick="filterImages('Nature')">Nature</button>
+  <button onclick="filterImages('Animals')">Animals</button>
+  <button onclick="filterImages('Tech')">Tech</button>
+</div>
+
+<div id="gallery"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
